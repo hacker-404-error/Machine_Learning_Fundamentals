@@ -48,4 +48,8 @@ Example:
 
 `Clustering`: Take a collection of 1,000,000 different genes, and find a way to automatically group these genes into groups that are somehow similar or related by different variables, such as lifespan, location, roles, and so on.
 
+`High Dimension Visualization`: Use the computer to help us visualize high dimension data.
+
+`Generative Models`: After a model captures the probability distribution of your input data, it will be able to generate more data. This can be very useful to make your classifier more robust.
+
 Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a [cocktail party](https://en.wikipedia.org/wiki/Cocktail_party_effect).
