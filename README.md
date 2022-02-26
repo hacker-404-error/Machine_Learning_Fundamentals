@@ -17,47 +17,72 @@ P = the probability that the program will win the next game.
 
 In general, any machine learning problem can be assigned to one of two broad classifications:
 
-`Supervised learning and Unsupervised learning`.
+`Supervised learning` , `Unsupervised learning` and `Reinforcement learning`.
 </p>
 
 ## Supervised Learning
-In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.
+Supervised learning is a type of machine learning method in which we provide sample labeled data to the machine learning system in order to train it, and on that basis, it predicts the output.
 
-Supervised learning problems are categorized into `regression` and `classification` problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories. 
+The system creates a model using labeled data to understand the datasets and learn about each data, once the training and processing are done then we test the model by providing a sample data to check whether it is predicting the exact output or not.
 
-Example 1:
-
-Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.
-
-We could turn this example into a classification problem by instead making our output about whether the house "sells for more or less than the asking price." Here we are classifying the houses based on price into two discrete categories.
-
-Example 2:
+The goal of supervised learning is to map input data with the output data. The supervised learning is based on supervision, and it is the same as when a student learns things in the supervision of the teacher. The example of supervised learning is spam filtering.
+Supervised learning can be grouped further in two categories of algorithms:
+- `Classification`
+- `Regression`
+  
+Example:
 
 (a) `Regression` - Given a picture of a person, we have to predict their age on the basis of the given picture
 
 (b) `Classification` - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign.
 
-![Classification And regression](https://media.geeksforgeeks.org/wp-content/uploads/classification_regression.png)
+<br>
+<div align="center">
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/classification_regression.png" alt="Classification And regression">
+</div>
+<br>
+
 
 ## Unsupervised Learning
-Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables.
+
+Unsupervised learning is a learning method in which a machine learns without any supervision.
+
+The training is provided to the machine with the set of data that has not been labeled, classified, or categorized, and the algorithm needs to act on that data without any supervision. The goal of unsupervised learning is to restructure the input data into new features or a group of objects with similar patterns.
 
 We can derive this structure by `clustering` the data based on relationships among the variables in the data.
 
+<br>
+<div align="center">
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/unsupervised_learning-.png" alt="Unsupervised_Learning">
+</div>
+<br>
+
 With unsupervised learning there is no feedback based on the prediction results.
 
-![Unsupervised_Learning](https://media.geeksforgeeks.org/wp-content/uploads/unsupervised_learning-.png)
+In unsupervised learning, we don't have a predetermined result. The machine tries to find useful insights from the huge amount of data. It can be further classifieds into two categories of algorithms:
+- `Clustering`
+- `Association`
 
+<br>
+<div align="center">
+    <img src="https://miro.medium.com/max/745/0*LHiIYYxuVUd4qYFW.jpeg" alt="CLustering and Association">
+</div>
+<br>
 
-Example:
+##  Reinforcement Learning
+Reinforcement learning is a feedback-based learning method, in which a learning agent gets a reward for each right action and gets a penalty for each wrong action. The agent learns automatically with these feedbacks and improves its performance. In reinforcement learning, the agent interacts with the environment and explores it. The goal of an agent is to get the most reward points, and hence, it improves its performance.
 
-`Clustering`: Take a collection of 1,000,000 different genes, and find a way to automatically group these genes into groups that are somehow similar or related by different variables, such as lifespan, location, roles, and so on.
+The robotic dog, which automatically learns the movement of his arms, is an example of Reinforcement learning.
 
-`High Dimension Visualization`: Use the computer to help us visualize high dimension data.
+## Machine Learning working
 
-`Generative Models`: After a model captures the probability distribution of your input data, it will be able to generate more data. This can be very useful to make your classifier more robust.
+A Machine Learning system learns from historical data, builds the prediction models, and whenever it receives new data, predicts the output for it. The accuracy of predicted output depends upon the amount of data, as the huge amount of data helps to build a better model which predicts the output more accurately.
 
-Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a [cocktail party](https://en.wikipedia.org/wiki/Cocktail_party_effect).
+<br>
+<div align="center">
+    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/introduction-to-machine-learning2.png" alt="Machine_Learning_Working">
+</div>
+<br>
 
 
 ## Important Terms
@@ -78,7 +103,36 @@ The idea is to give a set of inputs(features) and it’s expected outputs(labels
 #### Prediction
 Once our model is ready, it can be fed a set of inputs to which it will provide a predicted output(label).
 
-![Training](https://media.geeksforgeeks.org/wp-content/uploads/training.png)
+
+<br>
+<div align="center">
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/training.png" alt="Training">
+</div>
+<br>
+
+# Applications of Machine learning
+
+<br>
+<div align="center">
+    <img src="https://559987-1802630-raikfcquaxqncofqfm.stackpathdns.com/assets/images/machine-learing/application/application.png" alt="Application_of_ML">
+</div>
+<br>
+
+# Machine learning Life cycle
+
+<br>
+<div align="center">
+    <img src="https://blog.finxter.com/wp-content/uploads/2020/12/image-69.png" alt="ML_LIFE_CYCLE">
+</div>
+<br>
+
+- `Data Gathering`: To train a machine learning model we need data. Thus, data gathering is the first and foremost step in the machine learning lifecycle wherein data is collected from various sources and integrated together to create a combined set of data known as the dataset.
+- `Data Preprocessing`: After the data set is ready it undergoes data preprocessing in which the data is transformed, or encoded so that the machine can easily read and parse it.
+- `Data Wrangling`: Real-world applications have various errors and issues like missing values, duplicate data, invalid data, and noise that can hamper the training model and the final outcome. Hence, it is extremely important to deal with such issues and make the raw data understandable so that it can be easily understood by the machine learning algorithm. This process is known as data wrangling.
+- `Data Analysis`: Once the data is ready to be processed it is used to build a machine learning model using numerous analytical techniques.
+- `Training Model`: After data analysis, the model is trained using various algorithms so that it can understand the provided patterns, features, and rules. This allows the model to improve its performance and efficiency.
+- `Test Model`: Once the model is trained it undergoes testing where it is checked for its accuracy and efficiency.
+- `Deployment`: Finally the model is deployed in the form of a real-world application.
 
 # Python libraries that used in Machine Learning are: 
 
