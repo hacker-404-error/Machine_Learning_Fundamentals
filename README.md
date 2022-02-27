@@ -117,7 +117,7 @@ A Machine Learning system learns from historical data, builds the prediction mod
 
 # Python libraries that used in Machine Learning are: 
 
-### `Numpy` [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hacker-404-error/Machine_Learning_Fundamentals/blob/master/NumPy/Numpy.ipynb)
+### `Numpy` [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hacker-404-error/Machine_Learning_Fundamentals/blob/master/NumPy/Numpy.ipynb#scrollTo=mCGniyBKwORB)
 ### `Scipy`
 ### `Scikit-learn`
 ### `Theano`
